@@ -27,6 +27,14 @@ while True:
             print("Student Name:", students[roll])
         else:
             print("Student Not Found")
+            elif choice == "5":
+    roll = input("Enter Roll Number: ")
+
+    if roll in students:
+        del students[roll]
+        print("Student Deleted")
+    else:
+        print("Student Not Found")
 
     elif choice == "4":
         print("Exiting Program")
